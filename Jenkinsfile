@@ -13,6 +13,10 @@ pipeline {
                 echo 'Testing..'
             }
         }
+        stage('UnitTest') {
+            steps {
+                echo 'Unit Testing in progress..'
+            }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
